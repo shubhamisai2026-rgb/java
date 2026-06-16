@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class program278 {
+    public static void display(int iNo) {
+        int iCnt = 0;
+        for (iCnt = 1; iCnt <= iNo; iCnt++) {
+            if (iCnt % 2 == 0) {
+                System.out.print("*\t");
+            } else {
+                System.out.print((iCnt / 2 + 1)+"\t");
+            }
+        }
+    }
+
+    public static void main(String args[]) {
+        int iValue = 0;
+        Scanner sobj = new Scanner(System.in);
+        System.out.println("enter a your value:");
+        iValue = sobj.nextInt();
+        display(iValue);
+        sobj.close();
+    }
+}
